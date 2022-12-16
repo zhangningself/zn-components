@@ -23,3 +23,9 @@ jobs:
           node -v 
           npm -v
           echo 'hello github actions'
+  test2:
+    runs-on: test-dev
+    steps:
+      - run: touch a.txt
+      - run: echo 100 > a.txt
+      - run: cat a.txt
