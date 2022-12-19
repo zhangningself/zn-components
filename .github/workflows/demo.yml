@@ -11,7 +11,7 @@ on:
 
 jobs:
   demo:
-    runs-on: test-dev
+    runs-on: zn-components
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
@@ -24,7 +24,7 @@ jobs:
           npm -v
           echo 'hello github actions'
   test2:
-    runs-on: test-dev
+    runs-on: zn-components
     steps:
       - run: touch a.txt
       - run: echo 100 > a.txt
